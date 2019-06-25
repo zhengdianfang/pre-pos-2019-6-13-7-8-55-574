@@ -1,5 +1,13 @@
 'use strict';
 
 function createUpdatedCollection(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+   const resultArray = [...collectionA];
+   resultArray.forEach(element=> {
+      if(objectB.value.includes(element.key)) {
+        const temp = parseInt(element.count / 3);
+        element.count -= temp;
+      }
+   });
+
+  return collectionA;
 }

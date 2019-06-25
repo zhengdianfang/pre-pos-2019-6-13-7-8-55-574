@@ -1,5 +1,11 @@
 'use strict';
 
 function createUpdatedCollection(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+   const resultArray = [...collectionA];
+   resultArray.forEach(element => {
+      if(objectB.value.includes(element.key)) {
+        element.count -= 1;
+      }
+   });
+   return resultArray;
 }
