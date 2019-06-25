@@ -9,5 +9,5 @@ function createUpdatedCollection(collectionA, objectB) {
       }
    });
 
-  return collectionA;
+  return resultArray;
 }
